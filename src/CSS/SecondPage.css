@@ -1,0 +1,99 @@
+/* Page-specific styles for login.html */
+body {
+    background: linear-gradient(180deg, black, whitesmoke);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 60px; /* Space for fixed navbar */
+    box-sizing: border-box;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info-content {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 3px solid darkred;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info, .form {
+        width: 100%;
+        padding: 10px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+}
